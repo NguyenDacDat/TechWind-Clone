@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="./assets/Icoonn/fontawesome-free-6.1.1-web/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -25,684 +29,736 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container">
+    <div class="app">
       <!-- Start Header -->
-      <div class="header">
-        <div class="header-img">
-          <img
-            src="https://shreethemes.in/techwind/layouts/assets/images/logo-dark.png"
-            alt=""
-          />
-        </div>
-        <ul class="nav">
-          <li>home</li>
-          <!-- Landing -->
-          <li>
-            lading
-            <i class="fa-solid fa-angle-down"></i>
-            <div class="submenu megamenu">
-              <div class="megamenu-item">
-                <ul>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-saas.html"
-                    >
-                      saas
-                      <span class="item-green">animation</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-saas.html"
-                      >classic saas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-modern-saas.html"
-                      >modern saas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
-                      >application</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
-                      >classic app</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-smartwatch.html"
-                      >smartwatch</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="
-                    https://shreethemes.in/techwind/layouts/index-marketing.html"
-                      >marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-seo.html"
-                      >seo agency</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="
-                    https://shreethemes.in/techwind/layouts/index-payment.html"
-                      >payments
-                      <span class="item-organe">New</span>
-                    </a>
-                  </li>
-                </ul>
+      <div class="header-wrapper">
+        <div class="header container">
+          <div class="header-img">
+            <img
+              src="https://shreethemes.in/techwind/layouts/assets/images/logo-dark.png"
+              alt=""
+            />
+          </div>
+          <ul class="nav">
+            <li>home</li>
+            <!-- Landing -->
+            <li>
+              lading
+              <i class="fa-solid fa-angle-down"></i>
+              <div class="submenu megamenu">
+                <div class="megamenu-item">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-saas.html"
+                      >
+                        saas
+                        <span class="item-green">animation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-saas.html"
+                        >classic saas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-modern-saas.html"
+                        >modern saas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
+                        >application</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
+                        >classic app</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-smartwatch.html"
+                        >smartwatch</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="
+                      https://shreethemes.in/techwind/layouts/index-marketing.html"
+                        >marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-seo.html"
+                        >seo agency</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="
+                      https://shreethemes.in/techwind/layouts/index-payment.html"
+                        >payments
+                        <span class="item-organe">New</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="megamenu-item">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-it-solution.html"
+                        >IT solution</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-it-solution-two.html"
+                        >IT solution two</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-digital-agency.html"
+                        >digital agency</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-job.html"
+                        >Job</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-restaurent.html"
+                        >Restaurent</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-hosting.html"
+                        >Hosting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-gym.html"
+                        >Gym
+                        <span class="item-dark">dark</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-nft.html"
+                        >NFT MARKETPLACE</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-hotel.html"
+                      >
+                        Hotel& Resort
+                        <span class="item-organe">New</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="megamenu-item">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-startup.html"
+                        >startup</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-business.html"
+                        >business</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-corporate.html"
+                        >corporate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-corporate-two.html"
+                        >corporate two</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-real-estate.html"
+                        >real estate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-consulting.html"
+                        >consulting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-insurance.html"
+                        >insurance</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-construction.html"
+                        >construction</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="megamenu-item">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-personal.html"
+                        >personal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-portfolio.html"
+                        >portfolio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-photography.html"
+                        >photography
+                        <span class="item-dark">Dark</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="
+                      https://shreethemes.in/techwind/layouts/index-studio.html"
+                        >studio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-coworking.html"
+                        >co-working</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-course.html"
+                        >online courses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-hospital.html"
+                        >hospital</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-event.html"
+                        >event / conference</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="megamenu-item">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-crypto.html"
+                        >cryptocurrency
+                        <span class="item-dark">Dark</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
+                        >landing one</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
+                        >landing two</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-three.html"
+                        >lading three</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-four.html"
+                        >landing four</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-service.html"
+                        >service provider</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-food-blog.html"
+                        >food blog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-blog.html"
+                        >blog</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="megamenu-item">
-                <ul>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-it-solution.html"
-                      >IT solution</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-it-solution-two.html"
-                      >IT solution two</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-digital-agency.html"
-                      >digital agency</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-job.html"
-                      >Job</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-restaurent.html"
-                      >Restaurent</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-hosting.html"
-                      >Hosting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-gym.html"
-                      >Gym
-                      <span class="item-dark">dark</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-nft.html"
-                      >NFT MARKETPLACE</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-hotel.html"
-                    >
-                      Hotel& Resort
-                      <span class="item-organe">New</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="megamenu-item">
-                <ul>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-startup.html"
-                      >startup</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-business.html"
-                      >business</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-corporate.html"
-                      >corporate</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-corporate-two.html"
-                      >corporate two</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-real-estate.html"
-                      >real estate</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-consulting.html"
-                      >consulting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-insurance.html"
-                      >insurance</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-construction.html"
-                      >construction</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="megamenu-item">
-                <ul>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-personal.html"
-                      >personal</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-portfolio.html"
-                      >portfolio</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-photography.html"
-                      >photography
-                      <span class="item-dark">Dark</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="
-                    https://shreethemes.in/techwind/layouts/index-studio.html"
-                      >studio</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-coworking.html"
-                      >co-working</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-course.html"
-                      >online courses</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-hospital.html"
-                      >hospital</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-event.html"
-                      >event / conference</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="megamenu-item">
-                <ul>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-crypto.html"
-                      >cryptocurrency
-                      <span class="item-dark">Dark</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
-                      >landing one</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
-                      >landing two</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-three.html"
-                      >lading three</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-four.html"
-                      >landing four</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-service.html"
-                      >service provider</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-food-blog.html"
-                      >food blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-blog.html"
-                      >blog</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <!-- End Lading -->
+            </li>
+            <!-- End Lading -->
 
-          <!-- Pages -->
-          <li>
-            Pages
-            <i class="fa-solid fa-angle-down"></i>
-            <ul class="subnav-Pages">
-              <li>
-                <a href=""
-                  >Company
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
+            <!-- Pages -->
+            <li>
+              Pages
+              <i class="fa-solid fa-angle-down"></i>
+              <ul class="subnav-Pages">
+                <li>
+                  <a href=""
+                    >Company
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-team.html"
+                        >Team</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-pricing.html"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Testimonial</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">
+                    Accounts
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >User Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Billing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-team.html"
+                        >Payment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-pricing.html"
+                        >Invoice</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Social</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Notification</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Setting</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- End Pages -->
+                </li>
+                <!-- Begin Real Estate -->
+                <li>
+                  <a href="">
+                    Real Estate
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Listing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Property Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Real Estate -->
+                <!-- Begin Courses -->
+                <li>
+                  <a href="">
+                    Courses
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Courses Listing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Courses Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Courses -->
+                <!-- Start NFT Market -->
+                <li>
+                  <a href="">
+                    NFT Market
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Explore</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Auction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-team.html"
+                        >Collections</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-pricing.html"
+                        >Creators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Wallet</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Create NFT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
+                        >Single NFT</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End NFT Market -->
+                <li>
+                  <a href=""> Food Recipe </a>
+                </li>
+                <!-- Start Photography -->
+                <li>
+                  <a href="">
+                    photography
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Portfolio</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Photography  -->
+                <!-- Start Job -->
+                <li>
+                  <a href="">
+                    Job / Careers
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Job Detail</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Job Apply</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Job candidates</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Candidate Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >All Companies</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Company Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Job -->
+                <!-- Start Helpcenter -->
+                <li>
+                  <a href="">
+                    Helpcenter
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >OverView</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Faqs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Guides</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Support</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Helpcenter -->
+                <!-- Start Blogs -->
+                <li>
+                  <a href="">
+                    Blog
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Blogs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Blogs & SideBar
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Blog Detail</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Blog Posts
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="subPages-childern-three">
+                        <li>
+                          <a
+                            href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                            >Standard Post</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://shreethemes.in/techwind/layouts/page-services.html"
+                            >Slider Post</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://shreethemes.in/techwind/layouts/page-team.html"
+                            >Gallery Post</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://shreethemes.in/techwind/layouts/page-pricing.html"
+                            >Youtube Post</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Post -->
+                <!-- Start Email -->
+                <li>
+                  <a href="">
+                    Email Template
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Confirmation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Reset Password</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Alert</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Invoice</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Email -->
+                <!-- Start Pages -->
+                <li>
+                  <a href="">
+                    Auth Pages
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
                 <ul class="subPages-childern">
                   <li>
                     <a
                       href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >About Us</a
+                      >Login</a
                     >
                   </li>
                   <li>
                     <a
                       href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >service</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-team.html"
-                      >Team</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-pricing.html"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Testimonial</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  Accounts
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >User Profile</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Billing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-team.html"
-                      >Payment</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-pricing.html"
-                      >Invoice</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Social</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Notification</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Setting</a
-                    >
-                  </li>
-                </ul>
-                <!-- End Pages -->
-              </li>
-              <!-- Begin Real Estate -->
-              <li>
-                <a href="">
-                  Real Estate
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Listing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Property Detail</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Real Estate -->
-              <!-- Begin Courses -->
-              <li>
-                <a href="">
-                  Courses
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Courses Listing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Courses Detail</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Courses -->
-              <!-- Start NFT Market -->
-              <li>
-                <a href="">
-                  NFT Market
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Explore</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Auction</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-team.html"
-                      >Collections</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-pricing.html"
-                      >Creators</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Wallet</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Create NFT</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-testimonial.html"
-                      >Single NFT</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End NFT Market -->
-              <li>
-                <a href=""> Food Recipe </a>
-              </li>
-              <!-- Start Photography -->
-              <li>
-                <a href="">
-                  photography
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Portfolio</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Photography  -->
-              <!-- Start Job -->
-              <li>
-                <a href="">
-                  Job / Careers
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Job Detail</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Job Apply</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Job candidates</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Candidate Details</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >All Companies</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Company Detail</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Job -->
-              <!-- Start Helpcenter -->
-              <li>
-                <a href="">
-                  Helpcenter
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >OverView</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Faqs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Guides</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Support</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Helpcenter -->
-              <!-- Start Blogs -->
-              <li>
-                <a href="">
-                  Blog
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Blogs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Blogs & SideBar
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Blog Detail</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Blog Posts
-                      <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="subPages-childern-three">
-                      <li>
-                        <a
-                          href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                          >Standard Post</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://shreethemes.in/techwind/layouts/page-services.html"
-                          >Slider Post</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://shreethemes.in/techwind/layouts/page-team.html"
-                          >Gallery Post</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://shreethemes.in/techwind/layouts/page-pricing.html"
-                          >Youtube Post</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <!-- End Post -->
-              <!-- Start Email -->
-              <li>
-                <a href="">
-                  Email Template
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Confirmation</a
+                      >Signup</a
                     >
                   </li>
                   <li>
@@ -714,385 +770,345 @@
                   <li>
                     <a
                       href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Alert</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Invoice</a
+                      >Lock Screen</a
                     >
                   </li>
                 </ul>
-              </li>
-              <!-- End Email -->
-              <!-- Start Pages -->
-              <li>
-                <a href="">
-                  Auth Pages
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-              </li>
-              <ul class="subPages-childern">
+                <!-- End Pages -->
+                <!-- Start Utility -->
                 <li>
-                  <a
-                    href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                    >Login</a
-                  >
+                  <a href="">
+                    Utility
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Terms OF service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Utility -->
+                <!-- Start Special -->
+                <li>
+                  <a href="">
+                    Special
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Coming Soon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Maintenance</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Error</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Thank You</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Special -->
+                <!-- Start Contact -->
+                <li>
+                  <a href="">
+                    Contact
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Contact detail</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Contact One</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Contact Two</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Contact -->
+                <!-- Start Multi Level Menu -->
+                <li>
+                  <a href="">
+                    Multi level menu
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="subPages-childern">
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
+                        >Level 1.0</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/page-services.html"
+                        >Level 2.0</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Multi Level Menu -->
+              </ul>
+            </li>
+            <!-- End Pages -->
+
+            <!-- Start Portfolio -->
+            <li>
+              Portfolio
+              <i class="fa-solid fa-angle-down"></i>
+              <!-- Start Col One -->
+              <div class="submenu megamenu">
+                <div class="megamenu-item-two">
+                  <ul>
+                    <li class="megamenu-head">Modern Portfolio</li>
+                    <li class="">
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-saas.html"
+                        >Two Column</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-modern-saas.html"
+                        >Three Column</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
+                        >Four Column</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
+                        >Five Column</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-smartwatch.html"
+                        >Six Column</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Col One -->
+                <!-- Start Col Two -->
+                <div class="megamenu-item-two">
+                  <ul>
+                    <li class="megamenu-head">Classic Portfolio</li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-it-solution-two.html"
+                        >Two Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-digital-agency.html"
+                        >Three Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-job.html"
+                        >Four Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-restaurent.html"
+                        >Five Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-hosting.html"
+                        >Six Column</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Col Two -->
+
+                <!-- Start Col Three -->
+                <div class="megamenu-item-two">
+                  <ul>
+                    <li class="megamenu-head">Creative Portfolio</li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-business.html"
+                        >Two Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-corporate.html"
+                        >Three Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-corporate-two.html"
+                        >Four Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-real-estate.html"
+                        >Five Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-consulting.html"
+                        >Six Column</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Cold Three -->
+
+                <!-- Start Col Four -->
+                <div class="megamenu-item-two">
+                  <ul>
+                    <li class="megamenu-head">Masonry Portfolio</li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-portfolio.html"
+                        >Two Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-photography.html"
+                        >Three Column
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="
+                      https://shreethemes.in/techwind/layouts/index-studio.html"
+                        >Four Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-coworking.html"
+                        >Five Column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-course.html"
+                        >Six Column</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Col Four -->
+
+                <!-- Start Cold Five -->
+                <div class="megamenu-item-two">
+                  <ul>
+                    <li class="megamenu-head">Portfolio Detail</li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
+                        >Portfolio One</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
+                        >Portfolio Two</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-three.html"
+                        >Portfolio Three</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shreethemes.in/techwind/layouts/index-landing-four.html"
+                        >Portfolio Four</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Col Five -->
+              </div>
+            </li>
+            <!-- Start Docs -->
+            <li>
+              Docs
+              <i class="fa-solid fa-angle-down"></i>
+              <ul class="subnav-Pages">
+                <li>
+                  <a href="">Company </a>
                 </li>
                 <li>
-                  <a
-                    href="https://shreethemes.in/techwind/layouts/page-services.html"
-                    >Signup</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://shreethemes.in/techwind/layouts/page-services.html"
-                    >Reset Password</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://shreethemes.in/techwind/layouts/page-services.html"
-                    >Lock Screen</a
-                  >
+                  <a href="">Accounts</a>
                 </li>
               </ul>
-              <!-- End Pages -->
-              <!-- Start Utility -->
-              <li>
-                <a href="">
-                  Utility
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Terms OF service</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Utility -->
-              <!-- Start Special -->
-              <li>
-                <a href="">
-                  Special
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Coming Soon</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Maintenance</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Error</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Thank You</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Special -->
-              <!-- Start Contact -->
-              <li>
-                <a href="">
-                  Contact
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Contact detail</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Contact One</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Contact Two</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Contact -->
-              <!-- Start Multi Level Menu -->
-              <li>
-                <a href="">
-                  Multi level menu
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subPages-childern">
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-aboutus.html"
-                      >Level 1.0</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/page-services.html"
-                      >Level 2.0</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- End Multi Level Menu -->
-            </ul>
-          </li>
-          <!-- End Pages -->
-
-          <!-- Start Portfolio -->
-          <li>
-            Portfolio
-            <i class="fa-solid fa-angle-down"></i>
-            <!-- Start Col One -->
-            <div class="submenu megamenu">
-              <div class="megamenu-item-two">
-                <ul>
-                  <li class="megamenu-head">Modern Portfolio</li>
-                  <li class="">
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-saas.html"
-                      >Two Column</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-modern-saas.html"
-                      >Three Column</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
-                      >Four Column</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-classic-app.html"
-                      >Five Column</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-smartwatch.html"
-                      >Six Column</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- End Col One -->
-              <!-- Start Col Two -->
-              <div class="megamenu-item-two">
-                <ul>
-                  <li class="megamenu-head">Classic Portfolio</li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-it-solution-two.html"
-                      >Two Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-digital-agency.html"
-                      >Three Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-job.html"
-                      >Four Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-restaurent.html"
-                      >Five Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-hosting.html"
-                      >Six Column</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- End Col Two -->
-
-              <!-- Start Col Three -->
-              <div class="megamenu-item-two">
-                <ul>
-                  <li class="megamenu-head">Creative Portfolio</li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-business.html"
-                      >Two Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-corporate.html"
-                      >Three Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-corporate-two.html"
-                      >Four Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-real-estate.html"
-                      >Five Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-consulting.html"
-                      >Six Column</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- End Cold Three -->
-
-              <!-- Start Col Four -->
-              <div class="megamenu-item-two">
-                <ul>
-                  <li class="megamenu-head">Masonry Portfolio</li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-portfolio.html"
-                      >Two Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-photography.html"
-                      >Three Column
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="
-                    https://shreethemes.in/techwind/layouts/index-studio.html"
-                      >Four Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-coworking.html"
-                      >Five Column</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-course.html"
-                      >Six Column</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- End Col Four -->
-
-              <!-- Start Cold Five -->
-              <div class="megamenu-item-two">
-                <ul>
-                  <li class="megamenu-head">Portfolio Detail</li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
-                      >Portfolio One</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-one.html"
-                      >Portfolio Two</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-three.html"
-                      >Portfolio Three</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shreethemes.in/techwind/layouts/index-landing-four.html"
-                      >Portfolio Four</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- End Col Five -->
+            </li>
+            <!-- End Docs -->
+            <li>Contact</li>
+          </ul>
+          <div class="nav-icon">
+            <div class="icon-inner">
+              <ion-icon name="settings-outline"></ion-icon>
             </div>
-          </li>
-          <!-- Start Docs -->
-          <li>
-            Docs
-            <i class="fa-solid fa-angle-down"></i>
-            <ul class="subnav-Pages">
-              <li>
-                <a href="">Company </a>
-              </li>
-              <li>
-                <a href="">Accounts</a>
-              </li>
-            </ul>
-          </li>
-          <!-- End Docs -->
-          <li>Contact</li>
-        </ul>
-        <div class="nav-icon">
-          <div class="icon-inner">
-            <ion-icon name="settings-outline"></ion-icon>
-          </div>
-          <div class="icon-inner ative">
-            <ion-icon name="cart-outline"></ion-icon>
-          </div>
-          <div class="menu-icon__mobile">
-            <ion-icon name="menu-outline"></ion-icon>
+            <div class="icon-inner ative">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+            <div class="menu-icon__mobile">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
-      <!-- End Header -->
 
+      <!-- End Header -->
       <!-- Start Content -->
       <div class="content">
-        <div class="content-info">
+        <div class="content-info container">
           <div class="content-about">
             <div class="about-heading">
               <h4>Our Creativity Is Your</h4>
@@ -1126,7 +1142,402 @@
           </div>
         </div>
       </div>
+      <!-- End Content -->
     </div>
+    <div class="business-partner">
+      <div class="wrapper flex container">
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/amazon.svg"
+            alt=""
+          />
+        </div>
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/google.svg"
+            alt=""
+          />
+        </div>
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/lenovo.svg"
+            alt=""
+          />
+        </div>
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/paypal.svg"
+            alt=""
+          />
+        </div>
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/shopify.svg"
+            alt=""
+          />
+        </div>
+        <div class="wrapper-item">
+          <img
+            src="https://shreethemes.in/techwind/layouts/assets/images/client/spotify.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <div class="app-work container">
+          <div class="work-tutorial">
+            <div class="work-title">
+              <h2>How It Work ?</h2>
+            </div>
+            <div class="work-text">
+              <p>
+                Start working with Tailwind CSS that can provide everything you
+                <br />
+                need to generate awareness, drive traffic, connect.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="container">
+            <div class="box-wrapper-inner">
+              <div class="box-left">
+                <img
+                  src="https://shreethemes.in/techwind/layouts/assets/images/illustrator/SEO_SVG.svg"
+                  alt=""
+                />
+              </div>
+              <div class="box-right">
+                <div class="box-right-inner">
+                  <h3 class="box-heading">Change the way you build websites</h3>
+                  <p class="box-text">
+                    You can combine all the Techwind templates into a single
+                    one,
+                    <br />
+                    you can take a component from the Application theme and use
+                    it in the Website.
+                  </p>
+                  <div class="box-item">
+                    <div class="box-item-check">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Digital Marketing Solutions for Tomorrow
+                      </span>
+                    </div>
+                    <div class="box-item-check">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Our Talented & Experienced Marketing Agency
+                      </span>
+                    </div>
+                    <div class="box-item-check">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Create your own skin to match your brand
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-find">
+                    <span
+                      >Find Out More
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content Two -->
+      <div class="box-content-two">
+        <div class="container">
+          <div class="box-wrapper-inner">
+            <div class="box-two-left">
+              <div class="wrapper-left">
+                <div class="content-two-left">
+                  <h3 class="content-two__heading">
+                    Speed up your development
+                    <br />
+                    with
+                    <span>Techwind.</span>
+                  </h3>
+                  <p class="content-two__text">
+                    You can combine all the Techwind templates into a single
+                    one, you can take a component from the Application theme and
+                    use it in the Website.
+                  </p>
+                  <div class="content-two__item">
+                    <div class="item-solutions">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Digital Marketing Solutions for Tomorrow
+                      </span>
+                    </div>
+                    <div class="item-solutions">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Our Talented & Experienced Marketing Agency
+                      </span>
+                    </div>
+                    <div class="item-solutions">
+                      <span>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Create your own skin to match your brand
+                      </span>
+                    </div>
+                    <div class="item-find">
+                      <span
+                        >Find Out More
+                        <i class="fa-solid fa-angle-down"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-right">
+                <div class="content-two-right">
+                  <div class="content-two-img">
+                    <img
+                      src="https://shreethemes.in/techwind/layouts/assets/images/illustrator/Mobile_notification_SVG.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-two-info">
+                    <form class="form-right">
+                      <!-- Col One -->
+                      <div class="form-col">
+                        <div class="form-input">
+                          <label for="yourName" class="text-YourName"
+                            >Your Name :
+                            <span class="text-red">*</span>
+                          </label>
+                        </div>
+                        <div class="form-textName">
+                          <div class="form-handle">
+                            <i class="fa-regular fa-user"></i>
+                            <input
+                              icon
+                              type="text"
+                              class="form-text"
+                              placeholder="Name"
+                              name="Name"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Col One -->
+                      <!-- Col Two -->
+                      <div class="form-col">
+                        <div class="form-input">
+                          <label for="yourName"
+                            >Your Email :
+                            <span class="text-red">*</span>
+                          </label>
+                        </div>
+                        <div class="form-textName">
+                          <div class="form-handle">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input
+                              icon
+                              type="text"
+                              class="form-text"
+                              placeholder="Email"
+                              name="Email"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Col Two -->
+                      <!-- Col Three -->
+                      <div class="form-col">
+                        <div class="form-input">
+                          <label for="yourName"
+                            >Enter Password :
+                            <span class="text-red">*</span>
+                          </label>
+                        </div>
+                        <div class="form-textName">
+                          <div class="form-handle">
+                            <i class="fa-solid fa-key"></i>
+                            <input
+                              icon
+                              type="text"
+                              class="form-text"
+                              placeholder="Password"
+                              name="Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Col Three -->
+                      <div class="btn-download">
+                        <button>Download</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-content-three">
+        <div class="wrapper-three container">
+          <div class="box-three-inner">
+            <div class="text-base">
+              <span>We believe in building each other and hence</span>
+            </div>
+            <div class="text-heading">
+              <h3>Work with some amazing partners</h3>
+            </div>
+            <div class="text-slate">
+              <p>
+                Start working with Tailwind CSS that can provide everything you
+                need to
+                <br />
+                generate awareness, drive traffic, connect.
+              </p>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide--inner">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slideOne">
+                        <div class="swiper-img">
+                          <img
+                            src="https://shreethemes.in/techwind/layouts/assets/images/client/05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="slider-info">
+                          <div class="slider-info--title">
+                            <p>
+                              " The most well-known dummy text is the 'Lorem
+                              Ipsum', which is said to have originated in the
+                              16th century. "
+                            </p>
+                          </div>
+                          <div class="slider-info--name">
+                            <span>Barbara McIntosh</span>
+                          </div>
+                          <div class="slider-info--place">
+                            <span>Staff Engineer, Algolia</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slideTwo">
+                        <div class="swiper-img">
+                          <img
+                            src="https://shreethemes.in/techwind/layouts/assets/images/client/05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="slider-info">
+                          <div class="slider-info--title">
+                            <p>
+                              " The most well-known dummy text is the 'Lorem
+                              Ipsum', which is said to have originated in the
+                              16th century. "
+                            </p>
+                          </div>
+                          <div class="slider-info--name">
+                            <span>Barbara McIntosh</span>
+                          </div>
+                          <div class="slider-info--place">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- <div class="box-slideshow">
+              <div class="slideshow-inner">
+                <div class="slide-one">
+                  <div class="slide-parents">
+                    <div class="slide-img">
+                      <img
+                        src="https://shreethemes.in/techwind/layouts/assets/images/client/06.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <div class="slide-title">
+                        <p>
+                          " The most well-known dummy text is the 'Lorem Ipsum',
+                          which is said to have originated in the 16th century.
+                          "
+                        </p>
+                      </div>
+                      <div class="slide-name">
+                        <span>Jill Webb</span>
+                      </div>
+                      <div class="slide-place">
+                        <span>Staff Engineer, Algolia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-two">
+                  <div class="slide-parents">
+                    <div class="slide-img">
+                      <img
+                        src="https://shreethemes.in/techwind/layouts/assets/images/client/04.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <div class="slide-title">
+                        <p>
+                          " The most well-known dummy text is the 'Lorem Ipsum',
+                          which is said to have originated in the 16th century.
+                          "
+                        </p>
+                      </div>
+                      <div class="slide-name">
+                        <span>Jill Webb</span>
+                      </div>
+                      <div class="slide-place">
+                        <span>Staff Engineer, Algolia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
-  <script src="./main.js"></script>
+  <script src="./handleInteractive/js.js"></script>
 </html>
